@@ -2,7 +2,7 @@
 
 Source code for the paper [Unsupervised cycle-consistent deformation for shape matching](http://imagine.enpc.fr/~groueixt/sgp/index.html)
 
-<img src="http://imagine.enpc.fr/~groueixt/sgp/sgp/teaser.png" alt="drawing" width="400"/>
+<img src="http://imagine.enpc.fr/~groueixt/sgp/sgp/teaser.png" alt="drawing" height="300"/><img src="./figures/demo00.png" alt="drawing" height="300"/>
 
 
 # Install
@@ -21,7 +21,7 @@ pip install http://imagine.enpc.fr/~langloip/data/pymesh2-0.2.1-cp37-cp37m-linux
 
 # Demo
 
-### Target shape + Source Shape
+### 1. Target shape + Source Shape
 
 Deform a source in a target and propagate a high-frequency texture from the source to the target, through the reconstruction. -> Require 2GB Gpu memory and 10sec to run (Tesla V100-SXM2-16GB).
 
@@ -32,11 +32,9 @@ export SHAPENET_PATH=./data/demo/
 python inference/forward_source_target.py --cat Chair --shapenetv1_path ${SHAPENET_PATH} --logdir Chair_unsup --eval_source ${SHAPENET_PATH}03001627/7f9733a6370440dcc8687ff9b0b4e4ac/model.obj --eval_target ${SHAPENET_PATH}03001627/257deb231ce652169f2349486c570dd4/model.obj
 ```
 
-<img src="./figures/demo00.png" alt="drawing" width="400"/>
 
 
-
-### Target shape + Source Dataset
+### 2. Target shape + Source Dataset
 
 Find the best source candidates for a given target and call `forward_source_target()` for each. ->Require 3GB Gpu memory and 90sec to run (Tesla V100-SXM2-16GB). First get a download link for shapenetcorev1 by creating an account here ->  [ShapenetCoreV1](https://www.shapenet.org/account/) 
 
@@ -49,8 +47,6 @@ export SHAPENET_PATH={YOUR_SHAPENET_PATH}
 
 python inference/get_criterion_shape.py --cat Chair --shapenetv1_path ${SHAPENET_PATH} --logdir Chair_unsup --eval_get_criterions_for_shape ./data/dataset_shapenet/03001627/257deb231ce652169f2349486c570dd4.txt 
 ```
-
-
 
 # Training
 
