@@ -38,22 +38,22 @@ class Experiments(object):
 
 
         self.inference_table_2_3 = {
-            # "sup_1": self.opts["sup_1"],
-            # "sup_2": self.opts["sup_2"],
+            "sup_1": self.opts["sup_1"],
+            "sup_2": self.opts["sup_2"],
             "sup_3": self.opts["sup_3"],
-            # "sup_4": self.opts["sup_4"],
+            "sup_4": self.opts["sup_4"],
             "sup_5": self.opts["sup_5"],
 
             "unsup_1": self.opts["unsup_1"] + " --num_figure_3_4 3  --shapenetv1_path " + str(self.shapenet_path),
-            # "unsup_2": self.opts["unsup_2"] + " --num_figure_3_4 3  --shapenetv1_path " + str(self.shapenet_path),
+            "unsup_2": self.opts["unsup_2"] + " --num_figure_3_4 3  --shapenetv1_path " + str(self.shapenet_path),
             "unsup_3": self.opts["unsup_3"] + " --num_figure_3_4 3  --shapenetv1_path " + str(self.shapenet_path),
-            # "unsup_4": self.opts["unsup_4"] + " --num_figure_3_4 3  --shapenetv1_path " + str(self.shapenet_path),
+            "unsup_4": self.opts["unsup_4"] + " --num_figure_3_4 3  --shapenetv1_path " + str(self.shapenet_path),
             "unsup_5": self.opts["unsup_5"] + " --num_figure_3_4 3  --shapenetv1_path " + str(self.shapenet_path),
 
-            # "ablation_0": "--logdir Car_unsup --cat Car --part_supervision 0 --num_shots_eval 100",
-            # "ablation_1": self.opts["ablation_1"],
-            # "ablation_2": self.opts["ablation_2"],
-            # "ablation_3": self.opts["ablation_3"],
+            "ablation_0": "--logdir Car_unsup --cat Car --part_supervision 0 --num_shots_eval 100",
+            "ablation_1": self.opts["ablation_1"],
+            "ablation_2": self.opts["ablation_2"],
+            "ablation_3": self.opts["ablation_3"],
         }
         for key in self.inference_table_2_3:
             self.inference_table_2_3[key] = "python inference/eval_segmentation.py " + self.inference_table_2_3[key]
@@ -82,17 +82,17 @@ class Experiments(object):
 
         self.additional_inference = {
             "new_ablation_0": "python inference/eval_segmentation.py  --logdir Car_unsup --cat Car --part_supervision 0 --num_shots_eval 5000",
-            # "new_ablation_1": "python inference/eval_segmentation.py  --logdir Car_unsup_ablation_1 --cat Car --part_supervision 0 --lambda_cycle_2 0 --lambda_cycle_3 0 --num_shots_eval 5000",
-            # "new_ablation_2": "python inference/eval_segmentation.py  --logdir Car_unsup_ablation_2 --cat Car --part_supervision 0 --lambda_chamfer 0 --num_shots_eval 5000",
-            # "new_ablation_3": "python inference/eval_segmentation.py  --logdir Car_unsup_ablation_3 --cat Car --part_supervision 0 --knn 0 --num_shots_eval 5000",
-            # "new_ablation_0": "python inference/eval_segmentation.py  --logdir Chair_unsup --cat Chair --part_supervision 0 --num_shots_eval 5000",
-            # "new_ablation_1": "python inference/eval_segmentation.py  --logdir Chair_unsup_ablation_1 --cat Chair --part_supervision 0 --lambda_cycle_2 0 --lambda_cycle_3 0 --num_shots_eval 5000",
-            # "new_ablation_2": "python inference/eval_segmentation.py  --logdir Chair_unsup_ablation_2 --cat Chair --part_supervision 0 --lambda_chamfer 0 --num_shots_eval 5000",
-            # "new_ablation_3": "python inference/eval_segmentation.py  --logdir Chair_unsup_ablation_3 --cat Chair --part_supervision 0 --knn 0 --num_shots_eval 5000",
-            # "new_ablation_0": "python inference/eval_segmentation.py  --logdir Airplane_unsup --cat Airplane --part_supervision 0 --num_shots_eval 5000",
-            # "new_ablation_1": "python inference/eval_segmentation.py  --logdir Airplane_unsup_ablation_1 --cat Airplane --part_supervision 0 --lambda_cycle_2 0 --lambda_cycle_3 0 --num_shots_eval 5000",
-            # "new_ablation_2": "python inference/eval_segmentation.py  --logdir Airplane_unsup_ablation_2 --cat Airplane --part_supervision 0 --lambda_chamfer 0 --num_shots_eval 5000",
-            # "new_ablation_3": "python inference/eval_segmentation.py  --logdir Airplane_unsup_ablation_3 --cat Airplane --part_supervision 0 --knn 0 --num_shots_eval 5000",
+            "new_ablation_1": "python inference/eval_segmentation.py  --logdir Car_unsup_ablation_1 --cat Car --part_supervision 0 --lambda_cycle_2 0 --lambda_cycle_3 0 --num_shots_eval 5000",
+            "new_ablation_2": "python inference/eval_segmentation.py  --logdir Car_unsup_ablation_2 --cat Car --part_supervision 0 --lambda_chamfer 0 --num_shots_eval 5000",
+            "new_ablation_3": "python inference/eval_segmentation.py  --logdir Car_unsup_ablation_3 --cat Car --part_supervision 0 --knn 0 --num_shots_eval 5000",
+            "new_ablation_0": "python inference/eval_segmentation.py  --logdir Chair_unsup --cat Chair --part_supervision 0 --num_shots_eval 5000",
+            "new_ablation_1": "python inference/eval_segmentation.py  --logdir Chair_unsup_ablation_1 --cat Chair --part_supervision 0 --lambda_cycle_2 0 --lambda_cycle_3 0 --num_shots_eval 5000",
+            "new_ablation_2": "python inference/eval_segmentation.py  --logdir Chair_unsup_ablation_2 --cat Chair --part_supervision 0 --lambda_chamfer 0 --num_shots_eval 5000",
+            "new_ablation_3": "python inference/eval_segmentation.py  --logdir Chair_unsup_ablation_3 --cat Chair --part_supervision 0 --knn 0 --num_shots_eval 5000",
+            "new_ablation_0": "python inference/eval_segmentation.py  --logdir Airplane_unsup --cat Airplane --part_supervision 0 --num_shots_eval 5000",
+            "new_ablation_1": "python inference/eval_segmentation.py  --logdir Airplane_unsup_ablation_1 --cat Airplane --part_supervision 0 --lambda_cycle_2 0 --lambda_cycle_3 0 --num_shots_eval 5000",
+            "new_ablation_2": "python inference/eval_segmentation.py  --logdir Airplane_unsup_ablation_2 --cat Airplane --part_supervision 0 --lambda_chamfer 0 --num_shots_eval 5000",
+            "new_ablation_3": "python inference/eval_segmentation.py  --logdir Airplane_unsup_ablation_3 --cat Airplane --part_supervision 0 --knn 0 --num_shots_eval 5000",
         }
 
 if __name__ == '__main__':

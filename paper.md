@@ -13,3 +13,9 @@ This populates a global Pandas dataframe with the results called `results.csv`.
 
 * Make the figures : check the generated mesh in the `figures/` folder 
 
+
+
+# Difference with the paper
+
+* The Meta network predict a Fully Connected Layer (Matrix `input_size,ouput_size` and Bias) instead of a Adaptive Normalization (Vector `input_size` and Bias)
+* The Generalized ablation study suggests that on could get rid of the chamfer loss enterily for slightly better performances.
