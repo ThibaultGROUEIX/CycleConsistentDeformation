@@ -79,13 +79,3 @@ Check out the options in `auxiliary/argument_parser.py`
 ## License
 
 [MIT](https://github.com/ThibaultGROUEIX/AtlasNet/blob/master/license_MIT)  : This work was funded by [Adobe System](https://github.com/fxia22/pointGAN) and [Ecole Doctorale MSTIC](http://www.univ-paris-est.fr/fr/-ecole-doctorale-mathematiques-et-stic-mstic-ed-532/).
-
-
-
-### TODO:
-
-* save a good `results_of_all_inferences.csv'
-* Make Chair Ablation + Airplane Ablation + Car Ablation
-* Redo everything from scratch to have a clean `results.csv` file.
-* Update list_of_experiemnts to remove the last ones
-* Send for reproducibility stamp review.
