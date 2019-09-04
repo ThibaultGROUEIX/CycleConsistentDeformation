@@ -65,7 +65,7 @@ Check out the options in `auxiliary/argument_parser.py`
 ```
 @INPROCEEDINGS{groueix19cycleconsistentdeformation,
   title     = {Unsupervised cycle-consistent deformation for shape matching},
-  author    = {Groueix, Thibault and Fisher, Matthew and Kim, Vova and Russell, Bryan and Aubry, Mathieu},
+  author    = {Groueix, Thibault and Fisher, Matthew and Kim, Vladimir G. and Russell, Bryan and Aubry, Mathieu},
   booktitle = {Symposium on Geometry Processing (SGP)},
   year      = {2019}
 }
