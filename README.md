@@ -61,7 +61,7 @@ python ./inference/eval_segmentation.py
 
 Check out the options in `auxiliary/argument_parser.py`
 
-[Reproduce the paper](./Paper.md)
+[Reproduce the paper](./paper.md)
 
 
 ## Citing this work
