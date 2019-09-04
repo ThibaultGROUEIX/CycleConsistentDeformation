@@ -1,0 +1,7 @@
+.DS_Store
+.floo
+.flooignore
+.idea
+log
+training/.DS_Store
+notebooks/.ipynb_checkpoints/
