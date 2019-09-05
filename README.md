@@ -1,6 +1,8 @@
-# **CycleConsistentDeformation**
+# **CycleConsistentDeformation** [[Project Page]](http://imagine.enpc.fr/~groueixt/sgp/index.html) [[Paper]](https://arxiv.org/abs/1907.03165) [[Talk]](http://imagine.enpc.fr/~groueixt/sgp/sgp/sgp.pptx)
 
-Source code for the paper [Unsupervised cycle-consistent deformation for shape matching](http://imagine.enpc.fr/~groueixt/sgp/index.html)
+ **Unsupervised cycle-consistent deformation for shape matching** <br>
+Thibault Groueix,  Matthew Fisher, Vladimir G. Kim , Bryan C. Russell, Mathieu Aubry  <br>
+In [SGP, 2019](https://sgp2019.di.unimi.it/).
 
 <img src="http://imagine.enpc.fr/~groueixt/sgp/sgp/teaser.png" alt="drawing" height="300"/><img src="./figures/demo00.png" alt="drawing" height="300"/>
 
@@ -65,7 +67,7 @@ Check out the options in `auxiliary/argument_parser.py`
 ```
 @INPROCEEDINGS{groueix19cycleconsistentdeformation,
   title     = {Unsupervised cycle-consistent deformation for shape matching},
-  author    = {Groueix, Thibault and Fisher, Matthew and Kim, Vladimir G. and Russell, Bryan and Aubry, Mathieu},
+  author    = {Groueix, Thibault and Fisher, Matthew and Kim, Vova and Russell, Bryan and Aubry, Mathieu},
   booktitle = {Symposium on Geometry Processing (SGP)},
   year      = {2019}
 }
