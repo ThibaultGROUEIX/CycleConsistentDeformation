@@ -15,7 +15,7 @@ class Visualizer(object):
         if points.size(-1) == 3:
             points = points.contiguous().data.cpu()
         else:
-            points = points.transpose(2, 1).contiguous().data.cpu()
+            points = points.transpose(0, 1).contiguous().data.cpu()
 
         if Y is None:
             self.vis.scatter(X=points, win=title, opts=dict(title=title, markersize=2))
