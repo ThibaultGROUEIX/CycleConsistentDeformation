@@ -177,7 +177,7 @@ class AbstractTrainer(object):
         """
         if self.epoch == self.opt.lr_decay_1:
             self.optimizer = optim.Adam(self.network.parameters(), lr=self.opt.lrate / 10.0)
-        if self.epoch == self.opt.lr_decay_1:
+        if self.epoch == self.opt.lr_decay_2:
             self.optimizer = optim.Adam(self.network.parameters(), lr=self.opt.lrate / 100.0)
 
     def train_epoch(self):
