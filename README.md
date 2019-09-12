@@ -14,6 +14,7 @@ This implementation uses [Pytorch](http://pytorch.org/) and CUDA-10.0.
 ```## Download the repository
 git clone https://github.com/ThibaultGROUEIX/CycleConsistentDeformation.git
 cd CycleConsistentDeformation
+git submodule update --init
 conda env create -f environment.yml
 conda activate sensei
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
