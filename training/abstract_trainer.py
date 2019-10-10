@@ -30,10 +30,14 @@ class AbstractTrainer(object):
         This helps reproduce results as all results will be associated with a commit
         :return:
         """
-        with open("commit.txt", 'r') as f:
-            current_commit = f.read()
+        try:
+            with open("commit.txt", 'r') as f:
+                current_commit = f.read()
+                print("git repo path : ", self.git_repo_path)
+            return self.git_repo_path + current_commit[:-1]
+        except:
             print("git repo path : ", self.git_repo_path)
-        return self.git_repo_path + current_commit[:-1]
+            return self.git_repo_path
 
     def init_save_dict(self, opt):
         self.local_dict_to_save_experiment = opt.__dict__

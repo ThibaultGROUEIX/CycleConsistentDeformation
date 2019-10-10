@@ -10,7 +10,7 @@ sys.path.append("./training/")
 sys.path.append("./")
 import argument_parser
 import trainer
-from auxiliary.utils import *
+from auxiliary.my_utils import *
 from functools import reduce
 from auxiliary.model_atlasnet import *
 import miou_shape
