@@ -11,14 +11,11 @@ In [SGP, 2019](https://sgp2019.di.unimi.it/).
 
 This implementation uses [Pytorch](http://pytorch.org/) and CUDA-10.0. 
 
-```## Download the repository
+```shell
 git clone https://github.com/ThibaultGROUEIX/CycleConsistentDeformation.git
-cd CycleConsistentDeformation
-git submodule update --init
-conda env create -f environment.yml
-conda activate sensei
+cd CycleConsistentDeformation; git submodule update --init
+conda env create -f environment.yml; conda activate sensei
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
-cd ./extension; python setup.py install; cd ..
 pip install http://imagine.enpc.fr/~langloip/data/pymesh2-0.2.1-cp37-cp37m-linux_x86_64.whl
 ```
 
