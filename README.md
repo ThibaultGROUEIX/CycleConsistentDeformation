@@ -61,7 +61,7 @@ Check out the options in `auxiliary/argument_parser.py`
 
 # ERRATUM
 
-The cycle consistency losses of equations 4 and 5 from the paper (2-cycle and 3-cycle consistency) use projection operators which are not diffrerentiable, hence breaking the gradient flow in the cycles. The results hold, but we will update the method section of the paper accordingly. Thanks @Jan Bednařík for spotting this!
+The cycle consistency losses of equations 4 and 5 from the paper (2-cycle and 3-cycle consistency) use projection operators which are not differentiable, thus breaking the gradient flow in the cycles. The qualitative/quantitative results hold and we will update the method section of the paper accordingly. Thanks @Jan Bednařík for spotting this!
 
 
 ## Citing this work
